@@ -9,3 +9,14 @@ html {
 .hidden{
     visibility: hidden;
 }
+
+input
+{
+    width: 60%;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}

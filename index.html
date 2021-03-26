@@ -109,7 +109,7 @@
 
                 <h2 class="content-subhead" id="contact">Prenez contact avec nous !</h2>
                 <p>
-                    Notre adresse e-mail: contact at aqua-prima dot com <br />
+                    Notre adresse e-mail: contact (at) aqua-prima (dot) com <br />
                     Notre numéro de téléphone: 03 86 52 93 49
                 </p>
 
@@ -120,12 +120,16 @@
                         <div class="pure-control-group">
                             <label for="nom">Nom: </label>
                             <input type="text" id="nom" placeholder="Doe" />
+                        </div>
+                        <div class="pure-control-group">
                             <label for="prenom">Prénom: </label>
                             <input type="text" id="prenom" placeholder="John" />
                         </div>
                         <div class="pure-control-group">
                             <label for="email">Email: </label>
                             <input type="email" id="email" placeholder="abc@xyz.com" required="" />
+                        </div>
+                        <div class="pure-control-group">
                             <label for="sujet">Sujet:</label>
                             <select id="sujet">
                                 <option selected="selected">Option par défaut</option>
@@ -134,11 +138,11 @@
                                 <option>Retours</option>
                             </select>
                         </div>
-                        <div class="pure-group">
+                        <div class="pure-control-group">
                             <input type="text" placeholder="Titre du message" class="pure-input-1" />
                             <textarea placeholder="Contenu du message" class="pure-input-1"></textarea>
                         </div>
-                        <div class="pure-controls">
+                        <div class="pure-control-group">
                             <!--
                             <label for="checkRGPD" class="pure-checkbox">
                                 J'ai pris conscience que les informations que
@@ -147,7 +151,7 @@
                                 <input type="checkbox" id="checkRGPD" />
                             </label>
                         -->
-                            <button type="submit" class="pure-button pure-button-primary">Envoyer</button>
+                            <button type="submit" class="pure-button pure-button-primary center">Envoyer</button>
                         </div>
                     </fieldset>
 
@@ -188,7 +192,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src="ui.js" defer></script>
-
+    <script src="pure.js" defer></script>
 </body>
 
 </html>
