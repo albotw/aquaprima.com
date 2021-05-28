@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="A layout example with a side menu that hides on mobile, just like the Pure website.">
-    <title>Responsive Side Menu &ndash; Layout Examples &ndash; Pure</title>
+    <title>Aqua-Prima</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
         integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
     <link rel="stylesheet" href="pure.css">
@@ -32,6 +32,9 @@
                     </li>
                     <li class="pure-menu-item menu-item-divided">
                         <a href="#aqualustral" class="pure-menu-link">Aqualustral</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#bains" class="pure-menu-link">Bains</a>
                     </li>
                     <li class="pure-menu-item ">
                         <a href="#contact" class="pure-menu-link">Contact</a>
@@ -59,26 +62,26 @@
                 <h1>AQUA-PRIMA</h1>
                 <h2>Les bienfaits de l'eau d'orage pour votre santé</h2> 
                 -->
-                <img src="bandeau_aquaprima.jpg" class="pure-img-responsive" />
+                <img src="IMG/LOGO.png" class="pure-img-responsive" />
             </div>
 
             <div class="content">
-                <h2 class="content-subhead">Bienvenue sur le site d'Aqua-Prima !</h2>
+                <h2 class="content-subhead titre">Bienvenue sur le site d'Aqua-Prima !</h2>
                 <p>
                     Aqua-Prima, entreprise fondée en 1985, vous propose une technologie unique au monde. Résultant de la
                     fusion des tranditions les plus anciennes avec la science la plus moderne, nous vous proposons avec
                     nos produits de bénéficier des bienfaits de l'eau d'orage.
                 </p>
 
-                <h2 class="content-subhead" id="aqualustral">Aqualustral</h2>
+                <h2 class="content-subhead titre" id="aqualustral">Aqualustral</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Nous fabriquons et commercialisons l'Aqualustral. 
+                    <br/>
+                    L'Aqualustral va vous permettre de retrouver l'équilibre énergétique optimum pour protéger au mieux votre capital santé.
+                    <br/>
+                    L'Aqualustral 386 se compose de deux pichets d'une contenance de 1,5 Litres et de deux couvercles en grès de Puisaye tournés et cuits selon les méthodes traditionnelles.
+                    La très faible consommation de courant du générateur d'éclair lumineux intégré à l'un des couvercles permet de le laisser relié en permanence au réseau électrique avec une prise de terre.
                 </p>
-
                 <div class="pure-g">
                     <div class="pure-u-1-4">
                         <img class="pure-img-responsive"
@@ -98,19 +101,15 @@
                     </div>
                 </div>
 
-                <h2 class="content-subhead">Try Resizing your Browser</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                <h2 class="content-subhead titre" id="bains">Bains</h2>
+                <p class="message">
+                    Actuellement, les bains ne sont pas disponibles car un nouveau prototype est en cours de réalisation.
                 </p>
 
-                <h2 class="content-subhead" id="contact">Prenez contact avec nous !</h2>
+                <h2 class="content-subhead titre" id="contact">Prenez contact avec nous !</h2>
                 <p>
                     Notre adresse e-mail: contact (at) aqua-prima (dot) com <br />
-                    Notre numéro de téléphone: 03 86 52 93 49
+                    Notre numéro de téléphone: 06 80 95 06 13
                 </p>
 
                 <p>
@@ -119,19 +118,21 @@
                     <fieldset>
                         <div class="pure-control-group">
                             <label for="nom">Nom: </label>
-                            <input type="text" id="nom" placeholder="Doe" />
+                            <input class="input" type="text" id="nom" />
                         </div>
                         <div class="pure-control-group">
                             <label for="prenom">Prénom: </label>
-                            <input type="text" id="prenom" placeholder="John" />
+                            <input class="input" type="text" id="prenom" />
                         </div>
                         <div class="pure-control-group">
                             <label for="email">Email: </label>
-                            <input type="email" id="email" placeholder="abc@xyz.com" required="" />
+                            <input class="input" type="email" id="email" required/>
                         </div>
+                    </fieldset>
+                    <fieldset>
                         <div class="pure-control-group">
                             <label for="sujet">Sujet:</label>
-                            <select id="sujet">
+                            <select id="sujet" class="input">
                                 <option selected="selected">Option par défaut</option>
                                 <option>Aqualustral</option>
                                 <option>Franchise</option>
@@ -139,9 +140,14 @@
                             </select>
                         </div>
                         <div class="pure-control-group">
-                            <input type="text" placeholder="Titre du message" class="pure-input-1" />
-                            <textarea placeholder="Contenu du message" class="pure-input-1"></textarea>
+                            <label for="titre">Titre:</label>
+                            <input name="titre" class="input" type="text" class="pure-input-1" required/>
                         </div>
+                        <div class="pure-control-group">
+                            <label for="contenu">Contenu:</label>
+                            <textarea name="contenu" class="pure-input-1 contenu" required></textarea>
+                        </div>
+
                         <div class="pure-control-group">
                             <!--
                             <label for="checkRGPD" class="pure-checkbox">
@@ -158,33 +164,33 @@
                 </form>
                 </p>
 
-                <h2 class="content-subhead" id="historique">Historique</h2>
+                <h2 class="content-subhead titre" id="historique">Historique</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    L'équipe Aqua-Prima s'est basée sur plusieurs études et travaux réalisés par différents chercheurs.
+                    Entre autres, les études de naturopathie de Robert Masson, les travaux du physicien français Rodolphe Lavinay qui est le premier à avoir utilisé des flashs lumineux pour donner à l'eau "habituelle" ses qualités thérapeutiques. 
+                    Forts de ce savoir, nous avons crée les bains thérapeutiques Aqua-Prima en 1985. Durant toutes ces années les résultats s’accumulent. nous multiplions les
+                    expériences et la recherche pour aboutir à un produit disponible pour tous: l'Aqualustral.
                 </p>
 
-                <h2 class="content-subhead" id="principe">Principe</h2>
+                <h2 class="content-subhead titre" id="principe">Principe</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Les anciens, conscients de l'action de la pluie d'orage et de son action énergétique, savaient s'y exposer pour se vivifier.
+                    Ils stockaient cette eau dans des récipients en argile ou en grès afin de ne pas altérer sa "qualité énergétique".
+                    <br/>
+                    L'aqualustral reprend ces principes et les rend accessibles à tous. L'eau, sollicitée par une succession d'éclairs lumineux adaptés, emmagasine (comme la pluie d'orage) et rayonne (fortement amplifiée) ce que l'on peut appeler  "l'énergie vitale" ou "l'information biologique" dont les organismes vivants ont besoin pour fonctionner.
                 </p>
 
-                <h2 class="content-subhead" id="vertus">Vertus</h2>
+                <h2 class="content-subhead titre" id="vertus">Vertus</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    La consommation de l'eau d'un pichet Aqualustral réhydrate le corps en profondeur et prévient l'apparition de nombreuses maladies.
+                    Les utilisateurs d'aqualustral ont constaté de multiples bienfaits, par exemple: 
+                    <ul>
+                        <li>Le renforcement des défenses immunitaires</li>
+                        <li>la diminution des effets secondaires des thérapies les plus lourdes</li>
+                        <li>l’assouplissement général du corps</li>
+                        <li>le bien-être psychique</li>
+                    </ul>
                 </p>
-
             </div>
 
         </div>

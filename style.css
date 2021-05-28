@@ -1,22 +1,36 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-.visible{
-    visibility: visible;
+.visible {
+  visibility: visible;
 }
 
-.hidden{
-    visibility: hidden;
+.hidden {
+  visibility: hidden;
 }
 
-input
-{
-    width: 60%;
+.input {
+  width: 60%;
 }
 
-.center
-{
-    margin-left: auto;
-    margin-right: auto;
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.contenu {
+  width: 60%;
+}
+
+.message {
+  background-color: darkred;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.titre {
+  color: black;
 }
