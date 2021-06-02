@@ -20,7 +20,7 @@ $(document).ready(function ()
         showSlide();
     });
 
-    
+    $("#sendmail").on("click", sendmail);
 
     $(".prev").click(() => { nextSlide(-1); });
     $(".next").click(() => { nextSlide(1); });
@@ -48,4 +48,38 @@ function showSlide()
     
     slides[currentSlide - 1].style.display = "block";
     document.getElementsByClassName("dot")[currentSlide - 1].style.color = "black";
+}
+
+function sendmail()
+{
+    let nom = $("#nom").val();
+    let prenom = $("#prenom").val();
+    let email = $("#email").val();
+    let titre = $("#titre").val();
+    let message = $("#message").val();
+    let csrf = $("#csrf_token").text();
+    
+    console.log(nom);
+    console.log(prenom);
+    console.log(email);
+    console.log(titre);
+    console.log(message);
+    console.log(csrf);
+
+    $.ajax({
+        url: "PHP/router.php",
+        type: "POST",
+        data: 
+        {
+            action: "sendmail",
+            csrf_token: csrf,
+            nom: nom,
+            prenom: prenom,
+            email: email,
+            titre: titre,
+            message: message
+        },
+        success: function (html) { alert(html); },
+        error: function (result, status, error) { console.error("Erreur: " + error + " resultat: " + result + " statut: " + status);}
+    });
 }

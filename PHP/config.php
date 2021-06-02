@@ -2,5 +2,5 @@
 
 class config
 {
-    public static string $mail = "aquaprima@free.fr";
+    public static $mail = "aquaprima@free.fr";
 }
