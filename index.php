@@ -63,7 +63,7 @@
                 <h1>AQUA-PRIMA</h1>
                 <h2>Les bienfaits de l'eau d'orage pour votre santé</h2> 
                 -->
-                <img src="IMG/Logo Aquaprima.svg" class="pure-img-responsive" />
+                <img src="IMG/Logo Aquaprima.svg" class="pure-img-responsive" id="logo"/>
             </div>
 
             <div class="content">
@@ -136,21 +136,12 @@
                     </fieldset>
                     <fieldset>
                         <div class="pure-control-group">
-                            <label for="sujet">Sujet:</label>
-                            <select id="sujet" class="input">
-                                <option selected="selected">Option par défaut</option>
-                                <option>Aqualustral</option>
-                                <option>Franchise</option>
-                                <option>Retours</option>
-                            </select>
-                        </div>
-                        <div class="pure-control-group">
                             <label for="titre">Titre:</label>
                             <input name="titre" class="input" type="text" class="pure-input-1" required/>
                         </div>
                         <div class="pure-control-group">
-                            <label for="contenu">Contenu:</label>
-                            <textarea name="contenu" class="pure-input-1 contenu" required></textarea>
+                            <label for="message">Message:</label>
+                            <textarea name="message" class="pure-input-1" required id="contenu"></textarea>
                         </div>
 
                         <div class="pure-control-group">

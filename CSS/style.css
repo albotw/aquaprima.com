@@ -20,7 +20,7 @@ html {
   display: block;
 }
 
-.contenu {
+#contenu {
   width: 60%;
 }
 
@@ -76,6 +76,10 @@ html {
 .dot {
   cursor: pointer;
   margin: 2px;
+}
+
+#logo {
+  max-width: 40%;
 }
 
 @keyframes fade {
