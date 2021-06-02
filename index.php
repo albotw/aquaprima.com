@@ -113,13 +113,13 @@ token::generate();
 
                 <h2 class="content-subhead titre" id="contact">Prenez contact avec nous !</h2>
                 <p>
-                    Notre adresse e-mail: contact (at) aqua-prima (dot) com <br />
+                    Notre adresse e-mail: contact(arobase)aqua-prima(point)com <br />
                     Notre numéro de téléphone: 06 80 95 06 13
                 </p>
 
                 <p>
                     Ou sinon vous pouvez utiliser ce formulaire pour nous envoyer un message
-                <form class="pure-form pure-form-aligned">
+                <form class="pure-form pure-form-aligned" id="mailform">
                     <fieldset>
                         <div class="pure-control-group">
                             <label for="nom">Nom: </label>
@@ -190,6 +190,10 @@ token::generate();
             </div>
 
         </div>
+        <div class="footer">
+            <span>Fait avec <a href="https://purecss.io/">Pure.css</a> par <a href="https://github.com/albotw/">Yann Trou</a></span>
+            <span>&copy; AQUA - PRIMA 2021</span>
+        </div>
     </div>
 
     <div id="csrf_token"><?php echo token::get(); ?></div>
@@ -197,6 +201,8 @@ token::generate();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="JS/ui.js" defer></script>
     <script src="JS/pure.js" defer></script>
+
+
 </body>
 
 </html>

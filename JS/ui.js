@@ -52,34 +52,39 @@ function showSlide()
 
 function sendmail()
 {
-    let nom = $("#nom").val();
-    let prenom = $("#prenom").val();
-    let email = $("#email").val();
-    let titre = $("#titre").val();
-    let message = $("#message").val();
-    let csrf = $("#csrf_token").text();
-    
-    console.log(nom);
-    console.log(prenom);
-    console.log(email);
-    console.log(titre);
-    console.log(message);
-    console.log(csrf);
+    let form = document.getElementById("mailform");
+    if (!form.checkValidity())
+    {
+        let tmpSubmit = document.createElement("button");
+        form.appendChild(tmpSubmit);
+        tmpSubmit.click();
+        form.removeChild(tmpSubmit);
+    }
+    else
+    {
+        let nom = $("#nom").val();
+        let prenom = $("#prenom").val();
+        let email = $("#email").val();
+        let titre = $("#titre").val();
+        let message = $("#message").val();
+        let csrf = $("#csrf_token").text();
 
-    $.ajax({
-        url: "PHP/router.php",
-        type: "POST",
-        data: 
-        {
-            action: "sendmail",
-            csrf_token: csrf,
-            nom: nom,
-            prenom: prenom,
-            email: email,
-            titre: titre,
-            message: message
-        },
-        success: function (html) { alert(html); },
-        error: function (result, status, error) { console.error("Erreur: " + error + " resultat: " + result + " statut: " + status);}
-    });
+        $.ajax({
+            url: "PHP/router.php",
+            type: "POST",
+            data: 
+            {
+                action: "sendmail",
+                csrf_token: csrf,
+                nom: nom,
+                prenom: prenom,
+                email: email,
+                titre: titre,
+                message: message
+            },
+            success: function (html) { alert(html); },
+            error: function (result, status, error) { console.error("Erreur: " + error + " resultat: " + result + " statut: " + status);}
+        });
+    }
+    
 }

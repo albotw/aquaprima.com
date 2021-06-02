@@ -82,6 +82,31 @@ html {
   max-width: 40%;
 }
 
+#csrf_token {
+  display: none;
+}
+
+.footer {
+  color: #777;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: #333;
+}
 @keyframes fade {
   from {
     opacity: 0.4;
