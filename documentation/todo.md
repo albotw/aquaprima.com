@@ -1,7 +1,5 @@
 # TODO:
 
-- Logo sans fond
-- slider photos.
-- footer
-- backend formulaire
-- 
+- setup email
+- images a ajouter
+- accès admin et dev.
