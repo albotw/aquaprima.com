@@ -1,17 +1,17 @@
 <?php
 require_once("PHP/token.php");
 session_start();
-
 token::generate();
 ?>
+
 <!doctype html>
 <html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
-    <title>Aqua-Prima</title>
+    <meta name="description" content="Mettez les bienfaits de l'eau d'orage à votre disposition">
+    <title>AQUA-PRIMA</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/pure.css">
@@ -191,7 +191,7 @@ token::generate();
 
         </div>
         <div class="footer">
-            <span>Fait avec <a href="https://purecss.io/">Pure.css</a> par <a href="https://github.com/albotw/">Yann Trou</a></span>
+            <span>Fait avec <a href="https://purecss.io/">Pure.css</a></span>
             <span>&copy; AQUA - PRIMA 2021</span>
         </div>
     </div>
