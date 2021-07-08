@@ -1,3 +1,5 @@
 <Files *>
-Deny from all
+    Deny from all
 </Files>
+
+ServerSignature Off

@@ -1,4 +1,6 @@
 # www.robots.org/
 
 User-Agent: *
-Disallow: 
+Disallow: /documentation/
+Disallow: /PHP/
+Disallow: README.md
