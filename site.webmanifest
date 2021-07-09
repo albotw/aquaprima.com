@@ -1,12 +1,14 @@
 {
-    "short_name":"",
-    "name":"",
-    "icons":[{
-        "src":"icon.png",
-        "type":"image/png",
-        "sizes":"192x192"
-    }],
-    "start_url":"/",
-    "background_color":"#FFFFFF",
-    "theme_color":"#FFFFFF"
+    "short_name": "Aqua-Prima",
+    "name": "Aqua-Prima",
+    "icons": [
+        {
+            "src": "IMG/favicon.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF"
 }

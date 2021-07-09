@@ -1,5 +1,5 @@
 <?php
-require_once("PHP/token.php");
+require_once("./PHP/token.php");
 session_start();
 token::generate();
 ?>
@@ -10,18 +10,21 @@ token::generate();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Mettez les bienfaits de l'eau d'orage à votre disposition">
-    <title>AQUA-PRIMA</title>
+    <meta name="keywords" content="eau d'orage, eau, orage, aqualustral, aquaprima, bains">
+    <title>Aqua-Prima | Les bienfaits de l'eau d'orage</title>
+
+    <link rel="icon" href="./IMG/favicon.png" type="image/png" />
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/pure.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./CSS/pure.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
 
     <div id="layout">
-        <!-- Menu toggle -->
         <a href="#menu" id="menuLink" class="menu-link">
             <!-- Hamburger icon -->
             <span></span>
@@ -67,7 +70,7 @@ token::generate();
                 <h1>AQUA-PRIMA</h1>
                 <h2>Les bienfaits de l'eau d'orage pour votre santé</h2> 
                 -->
-                <img src="IMG/Logo Aquaprima.svg" class="pure-img-responsive" id="logo" />
+                <img src="./IMG/Logo Aquaprima.svg" class="pure-img-responsive" id="logo" />
             </div>
 
             <div class="content">
@@ -86,6 +89,8 @@ token::generate();
                     <br />
                     L'Aqualustral 386 se compose de deux pichets d'une contenance de 1,5 Litres et de deux couvercles en grès de Puisaye tournés et cuits selon les méthodes traditionnelles.
                     La très faible consommation de courant du générateur d'éclair lumineux intégré à l'un des couvercles permet de le laisser relié en permanence au réseau électrique avec une prise de terre.
+                    <br />
+                    L'aqualustral est disponible uniquement sur commande, pour en savoir plus utilisez la section ci-dessous pour prendre contact avec nous.
                 </p>
 
                 <div id="slideshow-container">
@@ -113,12 +118,13 @@ token::generate();
 
                 <h2 class="content-subhead titre" id="contact">Prenez contact avec nous !</h2>
                 <p>
-                    Notre adresse e-mail: contact(arobase)aqua-prima(point)com <br />
-                    Notre numéro de téléphone: 06 80 95 06 13
+                    Notre adresse e-mail: <b>contact&commat;aqua-prima&period;com</b> <br />
+                    Notre numéro de téléphone: <b>06 80 95 06 13</b>
                 </p>
 
                 <p>
                     Ou sinon vous pouvez utiliser ce formulaire pour nous envoyer un message
+                </p>
                 <form class="pure-form pure-form-aligned" id="mailform">
                     <fieldset>
                         <div class="pure-control-group">
@@ -145,20 +151,11 @@ token::generate();
                         </div>
 
                         <div class="pure-control-group">
-                            <!--
-                            <label for="checkRGPD" class="pure-checkbox">
-                                J'ai pris conscience que les informations que
-                                je fournis ne seront utilisées que par AquaPrima a des fins commerciales et ne seront
-                                pas transmises à des tiers.
-                                <input type="checkbox" id="checkRGPD" />
-                            </label>
-                        -->
                             <button type="button" id="sendmail" class="pure-button pure-button-primary center">Envoyer</button>
                         </div>
                     </fieldset>
 
                 </form>
-                </p>
 
                 <h2 class="content-subhead titre" id="historique">Historique</h2>
                 <p>
@@ -201,7 +198,6 @@ token::generate();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="JS/ui.js" defer></script>
     <script src="JS/pure.js" defer></script>
-
 
 </body>
 

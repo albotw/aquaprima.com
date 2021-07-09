@@ -4,11 +4,16 @@ Site internet d'aquaprima. basé sur un template Purecss
 
 ## TODO
 
-Sitemap
-tags meta
-Robots.txt
-titre de page
-tag description
+Sitemap -> OK
+
+tags meta -> OK
+
+Robots.txt -> OK
+
+titre de page -> OK
+
+tag description -> OK
+
 https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=fr
 
 ## SECTIONS
