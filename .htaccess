@@ -8,7 +8,7 @@
             Header set Access-Control-Allow-Origin "*" env=IS_CORS
         </FilesMatch>
     </IfModule>
-<IfModule>
+</IfModule>
 
 # Document 404 Personnalisé
 ErrorDocument 404 /404.html
@@ -42,9 +42,9 @@ AddDefaultCharset utf-8
 </IfModule>
 
 # Ajouts pour la sécurité
-<IfModule mod_headers.c>
-    Header always set Content-Security-Policy "default-src 'self'; base-uri 'none': form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
-# </IfModule>
+#<IfModule mod_headers.c>
+#   Header always set Content-Security-Policy "default-src 'self'; base-uri 'none': form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
+#</IfModule>
 
 # Blocage de l'affichage des dossiers
 <IfModule mod_autoindex.c>
@@ -57,7 +57,7 @@ AddDefaultCharset utf-8
     RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
     RewriteCond %{SCRIPT_FILENAME} -d [OR]
     RewriteCond %{SCRIPT_FILENAME} -f
-    RewriteRule "(^|/)\." - [F
+    RewriteRule "(^|/)\." - [F]
 </IfModule>
 
 # Bloquer l'accès aux fichiers sensibles.
@@ -68,11 +68,11 @@ AddDefaultCharset utf-8
 </IfModule>
 
 # Forcer la redirection TLS du client
-<IfModule mod_headers.c>
-    Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains" "expr=%{HTTPS} == 'on'"
+#<IfModule mod_headers.c>
+#    Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains" "expr=%{HTTPS} == 'on'"
 #     # (1) Enable your site for HSTS preload inclusion.
 #     # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" "expr=%{HTTPS} == 'on'"
-</IfModule
+#</IfModule>
 
 # bloquer le sniffing de types mime
 <IfModule mod_header.c>
@@ -100,6 +100,8 @@ AddDefaultCharset utf-8
 <IfModule mod_headers.c>
     Header unset X-Powered-By
     Header always unset X-Powered-By
+    Header unset Server
+    Header always unset Server
 </IfModule>
 
 # Désactiver la signature du serveur sur les pages d'erreur

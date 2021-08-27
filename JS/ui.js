@@ -24,7 +24,14 @@ $(document).ready(function ()
 
     $(".prev").click(() => { nextSlide(-1); });
     $(".next").click(() => { nextSlide(1); });
+
+    setTextAreaWidth();
 });
+
+function setTextAreaWidth()
+{
+    $("#message").css("width", "60%");
+}
 
 function nextSlide(index)
 {
@@ -45,7 +52,7 @@ function showSlide()
         slides[i].style.display = "none";
         dots[i].style.color = "grey";
     }
-    
+
     slides[currentSlide - 1].style.display = "block";
     document.getElementsByClassName("dot")[currentSlide - 1].style.color = "black";
 }
@@ -72,7 +79,7 @@ function sendmail()
         $.ajax({
             url: "PHP/router.php",
             type: "POST",
-            data: 
+            data:
             {
                 action: "sendmail",
                 csrf_token: csrf,
@@ -83,8 +90,8 @@ function sendmail()
                 message: message
             },
             success: function (html) { alert(html); },
-            error: function (result, status, error) { console.error("Erreur: " + error + " resultat: " + result + " statut: " + status);}
+            error: function (result, status, error) { console.error("Erreur: " + error + " resultat: " + result + " statut: " + status); }
         });
     }
-    
+
 }
